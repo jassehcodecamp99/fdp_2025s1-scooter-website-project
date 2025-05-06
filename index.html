@@ -1,290 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/app.css" />
-    <title>Scooter Multi Page Website</title>
-  </head>
-  <body>
-    <header
-      class="flex items-center justify-between max-w-[1024px] m-auto w-full"
-    >
-      <div class="flex gap-20 py-8">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/app.css" />
+  <title>Scooter Multi Page Website</title>
+</head>
+
+<body>
+  <header class="flex items-center justify-between max-w-[1024px] m-auto w-full px-12">
+    <div class="flex gap-20 py-8">
+      <div>
+        <img src="/assets/logo.svg" alt="Logo " />
+      </div>
+      <nav>
+        <ul class="flex items-center gap-10 text-[#495567]">
+          <li>
+            <a href="#" class="hover:text-[#FCD72B] font-lexend-deca">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#FCD72B] font-lexend-deca">Location</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#FCD72B] font-lexend-deca font-">Careers</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <a href="#"
+        class="px-6 py-2 border-2 bg-[#FCD72B] text-sm text-white hover:bg-transparent hover:border-[#FCD72B] hover:text-[#FCD72B] font-space-mono font-bold">Get
+        scootin</a>
+    </div>
+  </header>
+  <main>
+    <section
+      class="bg-[url('/assets/images/home-hero-desktop.jpg')] bg-cover bg-center h-[110vh] md:h-[80vh] flex items-center relative overflow-x-hidden">
+      <div class="max-w-[1024px] px-12 m-auto w-full flex justify-center md:justify-between md:items-end">
+        <div class="max-w-[420px] flex flex-col items-center gap-10 mb-32">
+          <h1 class="text-4xl text-white text-center md:text-left font-bold font-space-mono">
+            Scooter sharing made simple
+          </h1>
+          <p class="text-white text-sm md:text-justify text-center md:px-8 font-lexend-deca">
+            Scoot takes the hastle out of urban mobility. Our bikes are palced
+            in convinient locations in each our cities. Use our app to locate
+            the nearest bike, unlock it with a tap, and you're away!
+          </p>
+          <a href="#"
+            class="relative z-10 border-2 px-6 py-2 w-38 bg-[#FCD72B] md:ml-24 text-white text-sm hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B] font-space-mono font-bold">Get
+            Scootin</a>
+          <div class="hidden md:flex gap-72 items-start absolute top-[52%] left-0">
+            <img src="/assets/patterns/line.svg" alt="Line image" class="h-3 w-46" />
+            <img src="/assets/patterns/right-arrow.svg" alt="Right arrow image" class="ml-28 h-32" />
+          </div>
+
+          <div class="block md:hidden gap-72 items-start absolute left-0 bottom-4">
+            <img src="/assets/patterns/right-arrow.svg" alt="Right arrow image" class="w-72" />
+          </div>
+        </div>
+        <div class="absolute -right-8 bottom-4 md:bottom-24">
+          <img src="/assets/patterns/white-circles.svg" alt="White circles" />
+        </div>
+      </div>
+    </section>
+    <section class="py-24 relative">
+      <div class="h-4 max-w-[850px] w-full bg-[#E5ECF4] absolute top-32 left-0"></div>
+      <div class="max-w-[1024px] m-auto flex gap-10">
+        <div class="max-w-[300px] flex flex-col gap-4">
+          <img src="/assets/icons/locate.svg" alt="Locate icon" class="w-[80px] relative" />
+          <h3 class="font-bold text-lg text-[#495567] font-space-mono font-bold">Locate with app</h3>
+          <p class="text-[#9396AA] text-sm leading-6 font-lexend-deca">
+            Use the app to find the nearest scooter to you. We are continously
+            placing scooters in the areas with most demand, so one should
+            never be too far away.
+          </p>
+        </div>
+        <div class="max-w-[300px] flex flex-col gap-4">
+          <img src="/assets/icons/scooter.svg" alt="Locate icon" class="w-[80px] relative" />
+          <h3 class="font-bold text-lg text-[#495567] font-space-mono font-bold">Pick your Scooter</h3>
+          <p class="text-[#9396AA] text-sm leading-6 font-lexend-deca">
+            We show the most important info to the scooters closest to you. So
+            you know how much charge they have left and can see how much it
+            will cost.
+          </p>
+        </div>
+        <div class="max-w-[300px] flex flex-col gap-4">
+          <img src="/assets/icons/ride.svg" alt="Locate icon" class="w-[80px] relative" />
+          <h3 class="font-bold text-lg text-[#495567] font-space-mono font-bold">Enjoy the ride</h3>
+          <p class="text-[#9396AA] text-sm leading-6 font-lexend-deca">
+            Scan the QR code on the bike will unlock. Retract the cable lock,
+            and put a helmet on, and you are off. Always lock bikes away from
+            walkways and accessibility ramps.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 relative overflow-x-hidden">
+      <div class="w-96 h-96 bg-[#E5ECF4] rounded-full absolute -right-[300px]"></div>
+      <div class="absolute right-0 bottom-20">
+        <img src="/assets/patterns/left-downward-arrow.svg" alt="Left downward arrow" />
+      </div>
+      <div class="max-w-[1024px] m-auto flex justify-between items-center">
+        <div class="max-w-[380px] flex flex-col gap-4">
+          <h2 class="text-4xl font-bold text-[#495567] font-space-mono font-bold">
+            Easy to use riding telemetry
+          </h2>
+          <p class="text-[#9396AA] text-sm leading-6 mb-4 font-lexend-deca">
+            The Scoot app is available with riding telemetry. This means it
+            can show you your average speed, how long you've been using the
+            scooter, your traveling distance, and many more things all in an
+            easy to use app.
+          </p>
+          <div>
+            <a href="#"
+              class="px-6 py-2 bg-[#FCD72B] text-white text-sm border-2 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B] font-space-mono font-bold">Learn
+              more</a>
+          </div>
+        </div>
         <div>
-          <img src="/assets/logo.svg" alt="Logo " />
+          <img src="/assets/images/telemetry.jpg" alt="Telemetry" class="rounded-full w-96" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 relative overflow-x-hidden">
+      <div class="w-96 h-96 bg-[#E5ECF4] rounded-full absolute -left-[300px]"></div>
+      <div class="absolute -left-40 top-24">
+        <img src="/assets/patterns/right-arrow.svg" alt="Left downward arrow" />
+      </div>
+      <div class="max-w-[1024px] m-auto flex justify-between items-center">
+        <div>
+          <img src="/assets/images/near-you.jpg" alt="Telemetry" class="rounded-full w-96" />
+        </div>
+        <div class="max-w-[380px] flex flex-col gap-4">
+          <h2 class="text-4xl font-bold text-[#495567] font-space-mono font-bold">
+            Coming to a city near you
+          </h2>
+          <p class="text-[#9396AA] text-sm leading-6 mb-4 font-lexend-deca">
+            Scoot is available in 4 major cities so far. We’re expanding
+            rapidly, so be sure to let us know if you want to see us in your
+            hometown. We’re aiming to let our scooters loose on 23 cities over
+            the coming year.
+          </p>
+          <div>
+            <a href="#"
+              class="px-6 py-2 bg-[#FCD72B] text-white text-sm border-2 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B] font-space-mono font-bold">Learn
+              more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 relative overflow-x-hidden">
+      <div class="w-96 h-96 bg-[#E5ECF4] rounded-full absolute -right-[300px]"></div>
+      <div class="absolute -right-[450px] top-40">
+        <img src="/assets/patterns/left-downward-arrow.svg" alt="Left downward arrow" />
+      </div>
+      <div class="max-w-[1024px] m-auto flex justify-between items-center">
+        <div class="max-w-[380px] flex flex-col gap-4">
+          <h2 class="text-4xl font-bold text-[#495567] font-space-mono font-bold">
+            Zero hasstle payments
+          </h2>
+          <p class="text-[#9396AA] text-sm leading-6 mb-4 font-lexend-deca">
+            Our payment is as easy as one two three. We accept most credit
+            cards and debit cards. You can also link your PayPal account
+            inside the app. Need to pay later? No worries! You can defer
+            payment for up to a month.
+          </p>
+          <div>
+            <a href="#"
+              class="px-6 py-2 bg-[#FCD72B] text-white text-sm border-2 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B] font-space-mono font-bold">Learn
+              more</a>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/images/payments.jpg" alt="Telemetry" class="rounded-full w-96" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#495567] relative overflow-x-hidden">
+      <div class="absolute bottom-0 -right-40">
+        <img src="/assets/patterns/semi-circles.svg" alt="Semi circles" />
+      </div>
+      <div class="max-w-[1024px] m-auto py-24 flex justify-between">
+        <div class="max-w-[350px]">
+          <h2 class="text-4xl font-bold text-white font-space-mono font-bold">
+            Sign up and Scoot off today
+          </h2>
+        </div>
+        <div class="flex gap-8">
+          <img src="/assets/icons/app-store.svg" alt="App store" class="w-44 h-16" />
+          <img src="/assets/icons/google-play.svg" alt="Google play" class="w-44 h-16" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-[#323436]">
+    <div class="max-w-[1024px] m-auto flex items-center justify-between">
+      <div class="flex items-center gap-20 py-8">
+        <div>
+          <p class="font-bold text-4xl text-white font-space-mono font-bold">Scoot</p>
         </div>
         <nav>
-          <ul class="flex items-center gap-10 text-[#495567]">
+          <ul class="flex items-center gap-10 text-white">
             <li>
-              <a href="#" class="hover:text-[#FCD72B]">About</a>
+              <a href="#" class="hover:text-[#FCD72B] font-space-mono">About</a>
             </li>
             <li>
-              <a href="#" class="hover:text-[#FCD72B]">Location</a>
+              <a href="#" class="hover:text-[#FCD72B] font-space-mono">Location</a>
             </li>
             <li>
-              <a href="#" class="hover:text-[#FCD72B]">Careers</a>
+              <a href="#" class="hover:text-[#FCD72B] font-space-mono">Careers</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <a
-          href="#"
-          class="px-6 py-2 border-2 bg-[#FCD72B] text-white hover:bg-transparent hover:border-[#FCD72B] hover:text-[#FCD72B]"
-          >Get scootin</a
-        >
+      <div class="flex gap-10">
+        <img src="/assets/icons/facebook.svg" alt="Facebook" />
+        <img src="/assets/icons/twitter.svg" alt="Twitter" />
+        <img src="/assets/icons/instagram.svg" alt="Instagram" />
       </div>
-    </header>
-    <main>
-      <section
-        class="bg-[url('/assets/images/home-hero-desktop.jpg')] bg-cover bg-center h-[80vh] flex items-center relative overflow-x-hidden"
-      >
-        <div
-          class="max-w-[1024px] m-auto w-full flex justify-between items-end"
-        >
-          <div class="max-w-sm flex flex-col gap-10">
-            <h1 class="text-4xl text-white font-bold">
-              Scooter sharing made simple
-            </h1>
-            <p class="text-white text-sm ml-24">
-              Scoot takes the hastle out of urban mobility. Our bikes are palced
-              in convinient locations in each our cities. Use our app to locate
-              the nearest bike, unlock it with a tap, and you're away!
-            </p>
-            <a
-              href="#"
-              class="relative z-10 border-2 px-6 py-2 max-w-36 bg-[#FCD72B] ml-24 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B]"
-              >Get Scootin</a
-            >
-            <div class="flex gap-72 items-start absolute top-[50%] left-0">
-              <img src="/assets/patterns/line.svg" alt="Line image" />
-              <img
-                src="/assets/patterns/right-arrow.svg"
-                alt="Right arrow image"
-                class="ml-10"
-              />
-            </div>
-          </div>
-          <div class="absolute -right-8">
-            <img src="/assets/patterns/white-circles.svg" alt="White circles" />
-          </div>
-        </div>
-      </section>
-      <section class="py-24 relative">
-        <div
-          class="h-4 max-w-[850px] w-full bg-[#E5ECF4] absolute top-32 left-0"
-        ></div>
-        <div class="max-w-[1024px] m-auto flex gap-10">
-          <div class="max-w-[300px] flex flex-col gap-4">
-            <img
-              src="/assets/icons/locate.svg"
-              alt="Locate icon"
-              class="w-[80px] relative"
-            />
-            <h3 class="font-bold text-lg text-[#495567]">Locate with app</h3>
-            <p class="text-[#9396AA] text-sm leading-6">
-              Use the app to find the nearest scooter to you. We are continously
-              placing scooters in the areas with most demand, so one should
-              never be too far away.
-            </p>
-          </div>
-          <div class="max-w-[300px] flex flex-col gap-4">
-            <img
-              src="/assets/icons/scooter.svg"
-              alt="Locate icon"
-              class="w-[80px] relative"
-            />
-            <h3 class="font-bold text-lg text-[#495567]">Pick your Scooter</h3>
-            <p class="text-[#9396AA] text-sm leading-6">
-              We show the most important info to the scooters closest to you. So
-              you know how much charge they have left and can see how much it
-              will cost.
-            </p>
-          </div>
-          <div class="max-w-[300px] flex flex-col gap-4">
-            <img
-              src="/assets/icons/ride.svg"
-              alt="Locate icon"
-              class="w-[80px] relative"
-            />
-            <h3 class="font-bold text-lg text-[#495567]">Enjoy the ride</h3>
-            <p class="text-[#9396AA] text-sm leading-6">
-              Scan the QR code on the bike will unlock. Retract the cable lock,
-              and put a helmet on, and you are off. Always lock bikes away from
-              walkways and accessibility ramps.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="py-24 relative overflow-x-hidden">
-        <div
-          class="w-96 h-96 bg-[#E5ECF4] rounded-full absolute -right-[300px]"
-        ></div>
-        <div class="absolute right-0 bottom-20">
-          <img
-            src="/assets/patterns/left-downward-arrow.svg"
-            alt="Left downward arrow"
-          />
-        </div>
-        <div class="max-w-[1024px] m-auto flex justify-between items-center">
-          <div class="max-w-[300px] flex flex-col gap-4">
-            <h2 class="text-4xl font-bold text-[#495567]">
-              Easy to use riding telemetry
-            </h2>
-            <p class="text-[#9396AA] text-sm leading-6 mb-4">
-              The Scoot app is available with riding telemetry. This means it
-              can show you your average speed, how long you've been using the
-              scooter, your traveling distance, and many more things all in an
-              easy to use app.
-            </p>
-            <div>
-              <a
-                href="#"
-                class="px-6 py-2 bg-[#FCD72B] text-white border-2 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B]"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div>
-            <img
-              src="/assets/images/telemetry.jpg"
-              alt="Telemetry"
-              class="rounded-full w-96"
-            />
-          </div>
-        </div>
-      </section>
+    </div>
+  </footer>
+</body>
 
-      <section class="py-24 relative overflow-x-hidden">
-        <div
-          class="w-96 h-96 bg-[#E5ECF4] rounded-full absolute -left-[300px]"
-        ></div>
-        <div class="absolute -left-40 top-24">
-          <img
-            src="/assets/patterns/right-arrow.svg"
-            alt="Left downward arrow"
-          />
-        </div>
-        <div class="max-w-[1024px] m-auto flex justify-between items-center">
-          <div>
-            <img
-              src="/assets/images/near-you.jpg"
-              alt="Telemetry"
-              class="rounded-full w-96"
-            />
-          </div>
-          <div class="max-w-[300px] flex flex-col gap-4">
-            <h2 class="text-4xl font-bold text-[#495567]">
-              Coming to a city near you
-            </h2>
-            <p class="text-[#9396AA] text-sm leading-6 mb-4">
-              Scoot is available in 4 major cities so far. We’re expanding
-              rapidly, so be sure to let us know if you want to see us in your
-              hometown. We’re aiming to let our scooters loose on 23 cities over
-              the coming year.
-            </p>
-            <div>
-              <a
-                href="#"
-                class="px-6 py-2 bg-[#FCD72B] text-white border-2 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B]"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-24 relative overflow-x-hidden">
-        <div
-          class="w-96 h-96 bg-[#E5ECF4] rounded-full absolute -right-[300px]"
-        ></div>
-        <div class="absolute -right-[450px] top-40">
-          <img
-            src="/assets/patterns/left-downward-arrow.svg"
-            alt="Left downward arrow"
-          />
-        </div>
-        <div class="max-w-[1024px] m-auto flex justify-between items-center">
-          <div class="max-w-[300px] flex flex-col gap-4">
-            <h2 class="text-4xl font-bold text-[#495567]">
-              Zero hasstle payments
-            </h2>
-            <p class="text-[#9396AA] text-sm leading-6 mb-4">
-              Our payment is as easy as one two three. We accept most credit
-              cards and debit cards. You can also link your PayPal account
-              inside the app. Need to pay later? No worries! You can defer
-              payment for up to a month.
-            </p>
-            <div>
-              <a
-                href="#"
-                class="px-6 py-2 bg-[#FCD72B] text-white border-2 hover:bg-transparent border-[#FCD72B] hover:text-[#FCD72B]"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div>
-            <img
-              src="/assets/images/payments.jpg"
-              alt="Telemetry"
-              class="rounded-full w-96"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-[#495567] relative overflow-x-hidden">
-        <div class="absolute bottom-0 -right-40">
-          <img src="/assets/patterns/semi-circles.svg" alt="Semi circles" />
-        </div>
-        <div class="max-w-[1024px] m-auto py-24 flex justify-between">
-          <div class="max-w-[300px]">
-            <h2 class="text-4xl font-bold text-white">
-              Sign up and Scoot off today
-            </h2>
-          </div>
-          <div class="flex gap-8">
-            <img
-              src="/assets/icons/app-store.svg"
-              alt="App store"
-              class="w-44 h-16"
-            />
-            <img
-              src="/assets/icons/google-play.svg"
-              alt="Google play"
-              class="w-44 h-16"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bg-[#323436]">
-      <div class="max-w-[1024px] m-auto flex items-center justify-between">
-        <div class="flex items-center gap-20 py-8">
-          <div>
-            <p class="font-bold text-4xl text-white">Scoot</p>
-          </div>
-          <nav>
-            <ul class="flex items-center gap-10 text-white">
-              <li>
-                <a href="#" class="hover:text-[#FCD72B]">About</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#FCD72B]">Location</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#FCD72B]">Careers</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="flex gap-10">
-          <img src="/assets/icons/facebook.svg" alt="Facebook" />
-          <img src="/assets/icons/twitter.svg" alt="Twitter" />
-          <img src="/assets/icons/instagram.svg" alt="Instagram" />
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

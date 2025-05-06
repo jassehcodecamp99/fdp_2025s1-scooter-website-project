@@ -1,1 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono&display=swap');
 @import "tailwindcss";
+
+:root {
+    --font-space-mono: "Space Mono";
+    --font-lexend-deca: "Lexend Deca"
+}
+
+@theme {
+    --font-space-mono: var(--font-space-mono);
+    --font-lexend-deca: var(--font-lexend-deca)
+}
+
